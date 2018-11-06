@@ -1,0 +1,230 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    /*width: 1920px;*/
+    /*background-color: #41e0d8;*/
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section > .content {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+section .top-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+section .top-buttons > * {
+    margin-left: 20px;
+}
+
+/*.flex-container {
+    display: flex;
+}*/
+
+div.button {
+    width: 140px;
+    height: 46px;
+    background-color: #262a34;
+    text-align: center;
+    align-items: center;
+}
+
+div.light {
+    background-color: #41e0d8;
+}
+
+div.white {
+    background-color: white;
+}
+
+a.link {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+div.button > a.link {
+    line-height: 46px;
+    margin: 0 auto;
+}
+
+div.white > a.link {
+    color: #41e0d8;
+}
+
+section.first {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: -webkit-linear-gradient(-30deg, #FFFFFF 40%, #41e0d8 40%);
+}
+
+section.second {
+    background-color: #262a34;
+}
+
+section.third {
+    background-color: #41e0d8;
+}
+
+div.centrized > * {
+    text-align: center;
+}
+
+.centrized-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-between-items > * {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.few-space-between-items > * {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.cut-screen-image {
+    display: inline-block;
+    background: center center / cover;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.slogan {/*
+    width: 453px;
+    height: 98px;*/
+    font-size: 43px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3c3d41;
+}
+
+.slogan > .numbers {
+    font-weight: 600;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.slogan-description {
+    width: 340px;
+    height: 115px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.second-slogan {
+    /*width: 283px;
+    height: 43px;*/
+    font-size: 43px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.second-slogan-description {
+  /*width: 340px;
+  height: 115px;*/
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.slogan-dark {
+    color: #262a34;
+}
+
+div.quote {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 1.7;
+    position: relative;
+    display: inline-block;
+}
+
+div.quote:after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: -9px;
+    width: 21px;
+    height: 21px;
+    transform: rotate(45deg);
+}
+
+div.quote > .text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+span.author {
+    color: #41e0d8;
+}
+
+div.quote-left, div.quote-right {
+    color: #41e0d8;
+}
+
+div.quote-right {
+    display: inline-block;
+    float: right;
+}
+
+input[type="text"] {
+    width: 400px;
+    border: none;
+    background-color: gray;
+    height: 46px;
+    margin: 2px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+div.copyright > span.company {
+    color: #41e0d8;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+}
