@@ -9,23 +9,27 @@ a {
 section {
     /*width: 1920px;*/
     /*background-color: #41e0d8;*/
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 25px;
+    /*padding-bottom: 28px;*/
 }
 
 section > .content {
-    max-width: 65%;
+    max-width: 75%;
     margin: 0 auto;
 }
 
 section .top-buttons {
+    /*display: inline-block;*/
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-top: 40px;
+    padding-right: 80px;
 }
 
 section .top-buttons > * {
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 5px;
 }
 
 /*.flex-container {
@@ -33,11 +37,12 @@ section .top-buttons > * {
 }*/
 
 div.button {
-    width: 140px;
+    width: 145px;
     height: 46px;
     background-color: #262a34;
     text-align: center;
     align-items: center;
+    margin-left: 50px;
 }
 
 div.light {
@@ -62,6 +67,7 @@ a.link {
 div.button > a.link {
     line-height: 46px;
     margin: 0 auto;
+    /*min-width: 90px;*/
 }
 
 div.white > a.link {
@@ -69,9 +75,26 @@ div.white > a.link {
 }
 
 section.first {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: -webkit-linear-gradient(-30deg, #FFFFFF 40%, #41e0d8 40%);
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
+    background-image: -webkit-linear-gradient(-30deg, #FFFFFF 34%, #41e0d8 34%);
+}
+
+section.first > .header-row {
+    margin-bottom: 240px;
+    max-width: 65%;
+}
+
+section.second, section.third {
+    padding-top: 220px;
+}
+
+section.second {
+    padding-bottom: 240px;
+}
+
+section.first > .promo {
+    max-width: 70%;
 }
 
 section.second {
@@ -82,14 +105,39 @@ section.third {
     background-color: #41e0d8;
 }
 
+section.fourth {
+    background-color: #262a34;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section.fourth > div {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 div.centrized > * {
     text-align: center;
 }
 
 .centrized-flex-container {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
+}
+
+.centrized-flex-container.centrized {
+    align-items: center;
+}
+
+.spaced-flex-container {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+
+.spaced-flex-container + .spaced-evenly {
+    justify-content: space-evenly;
 }
 
 .space-between-items > * {
@@ -105,8 +153,13 @@ div.centrized > * {
 div.cut-screen-image {
     display: inline-block;
     background: center center / cover;
-    max-height: 500px;
+    max-height: 550px;
     overflow: hidden;
+}
+
+div.slogan-block {
+    padding-left: 0px;
+    letter-spacing: 2;
 }
 
 .slogan {/*
@@ -116,8 +169,6 @@ div.cut-screen-image {
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
     text-align: left;
     color: #3c3d41;
 }
@@ -130,15 +181,14 @@ div.cut-screen-image {
 
 .slogan-description {
     width: 340px;
-    height: 115px;
+    /*height: 115px;*/
     font-size: 15px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+    line-height: 40px;
 }
 
 .second-slogan {
@@ -178,6 +228,8 @@ div.quote {
     line-height: 1.7;
     position: relative;
     display: inline-block;
+    max-height: 200px;
+    text-align: left;
 }
 
 div.quote:after {
@@ -192,6 +244,7 @@ div.quote:after {
 }
 
 div.quote > .text {
+    text-align: left;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -209,7 +262,7 @@ div.quote-right {
     float: right;
 }
 
-input[type="text"] {
+input[type="text"], input[type="text"]::placeholder {
     width: 400px;
     border: none;
     background-color: gray;
@@ -224,7 +277,7 @@ div.copyright > span.company {
 }
 
 footer {
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 30px;
     background-color: #f9f9f9;
 }
